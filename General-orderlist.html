@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Admindek | Admin Template</title>
+    <script src="./js/axios.min.js"></script>
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Admindek Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs."
+    />
+    <meta
+      name="keywords"
+      content="flat ui, admin Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app"
+    />
+    <meta name="author" content="colorlib" />
+
+    <link rel="icon" href="img/logo/favicon.ico" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:500,700"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="css/waves.min.css"
+      type="text/css"
+      media="all"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/feather.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-n.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="css/chartist.css"
+      type="text/css"
+      media="all"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/alltablestyles.css" />
+  </head>
+
+  <body>
+    <div class="loader-bg">
+      <div class="loader-bar"></div>
+    </div>
+
+    <div id="pcoded" class="pcoded">
+      <div class="pcoded-overlay-box"></div>
+      <div class="pcoded-container navbar-wrapper">
+        <!-- header starts -->
+        <nav class="navbar header-navbar pcoded-header">
+          <div class="navbar-wrapper">
+            <div class="navbar-logo">
+              <a href="index.html">
+                <img
+                  class="img-fluid"
+                  src="img/logo/logo.png"
+                  alt="Theme-Logo"
+                  style="width: 180px !important"
+                />
+              </a>
+            </div>
+            <div class="navbar-container container-fluid">
+              <ul class="nav-left">
+                <li style="margin: 0; padding: 0" class="header-search">
+                  <div class="main-search morphsearch-search">
+                    <div class="input-group">
+                      <span class="input-group-prepend search-close">
+                        <i class="feather icon-x input-group-text"></i>
+                      </span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter Keyword"
+                      />
+                      <span class="input-group-append search-btn">
+                        <i class="feather icon-search input-group-text"></i>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="nav-right">
+                <li class="user-profile header-notification">
+                  <div class="dropdown-primary dropdown">
+                    <div class="dropdown-toggle" data-toggle="dropdown">
+                      <img
+                        src="img/Prakhar.jpeg"
+                        class="img-radius"
+                        alt="User-Profile-Image"
+                      />
+                      <span>Prakhar</span>
+                      <i class="feather icon-chevron-down"></i>
+                    </div>
+                    <ul
+                      class="show-notification profile-notification dropdown-menu"
+                      data-dropdown-in="fadeIn"
+                      data-dropdown-out="fadeOut"
+                    >
+                      <li>
+                        <a href="#!">
+                          <i class="feather icon-settings"></i> Settings
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="feather icon-user"></i> Profile
+                        </a>
+                      </li>
+
+                      <!-- full-screen -->
+                      <li>
+                        <a
+                          href="#!"
+                          onclick="javascript:toggleFullScreen()"
+                          class="waves-effect waves-light"
+                        >
+                          <i class="full-screen feather icon-maximize"></i>
+                          Full-Screen
+                        </a>
+                      </li>
+                      <li>
+                        <a href="auth-sign-in-social.html">
+                          <i class="feather icon-log-out"></i> Logout
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- header ends -->
+        <!-- body starts -->
+        <div class="pcoded-main-container">
+          <div class="pcoded-wrapper">
+            <nav class="pcoded-navbar">
+              <div class="nav-list">
+                <!-- sidebar Starts -->
+                <div class="pcoded-inner-navbar main-menu">
+                  <div
+                    class="pcoded-navigation-label"
+                    style="width: 100%; padding: 5px; margin-top: 10px"
+                  >
+                    <select name="type" class="floww-user-type">
+                      <option
+                        value="general"
+                        selected
+                        style="border-radius: 25px"
+                      >
+                        General
+                      </option>
+                      <option value="brand-builder" style="border-radius: 5px">
+                        Brand Builder
+                      </option>
+                      <option value="complices" style="border-radius: 5px">
+                        Complices
+                      </option>
+                    </select>
+                  </div>
+                  <div class="pcoded-navigation-label"></div>
+                  <ul class="pcoded-item pcoded-left-item">
+                    <li>
+                      <a
+                        href="./General-home.html"
+                        class="waves-effect waves-dark"
+                      >
+                        <span class="pcoded-micon">
+                          <i class="feather icon-home"></i>
+                        </span>
+                        <!-- nav -->
+                        <span class="pcoded-mtext">Home</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="pcoded-navigation-label">Orders</div>
+                  <ul class="pcoded-item pcoded-left-item">
+                    <li class="">
+                      <a class="waves-effect waves-dark">
+                        <span class="pcoded-micon">
+                          <i class="feather icon-list"></i>
+                        </span>
+                        <!-- nav -->
+                        <span class="pcoded-mtext">Orders List</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="waves-effect waves-dark">
+                        <span class="pcoded-micon">
+                          <i class="feather icon-shopping-cart"></i>
+                        </span>
+                        <!-- nav -->
+                        <span class="pcoded-mtext">Place Order</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="waves-effect waves-dark">
+                        <span class="pcoded-micon">
+                          <i class="feather icon-file"></i>
+                        </span>
+                        <!-- nav -->
+                        <span class="pcoded-mtext">Feedbacks</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="pcoded-navigation-label">Customers</div>
+                  <ul class="pcoded-item pcoded-left-item">
+                    <li class="">
+                      <a class="waves-effect waves-dark">
+                        <span class="pcoded-micon">
+                          <i class="feather icon-list"></i>
+                        </span>
+                        <!-- nav -->
+                        <span class="pcoded-mtext">Customers List</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="pcoded-navigation-label">Invoice</div>
+                  <ul class="pcoded-item pcoded-left-item">
+                    <li class="">
+                      <a class="waves-effect waves-dark">
+                        <span class="pcoded-micon">
+                          <i class="feather icon-list"></i>
+                        </span>
+                        <!-- nav -->
+                        <span class="pcoded-mtext">Invoice List</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="waves-effect waves-dark">
+                        <span class="pcoded-micon">
+                          <i class="feather icon-paperclip"></i>
+                        </span>
+                        <!-- nav -->
+                        <span class="pcoded-mtext">Create Invoice</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="pcoded-navigation-label">Fleets</div>
+                  <ul class="pcoded-item pcoded-left-item">
+                    <li class="">
+                      <a class="waves-effect waves-dark">
+                        <span class="pcoded-micon">
+                          <i class="feather icon-list"></i>
+                        </span>
+                        <!-- nav -->
+                        <span class="pcoded-mtext">Fleet List</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a class="waves-effect waves-dark">
+                        <span class="pcoded-micon">
+                          <i class="feather icon-plus-circle"></i>
+                        </span>
+                        <!-- nav -->
+                        <span class="pcoded-mtext">Add Fleet</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- sidebar ends -->
+              </div>
+            </nav>
+
+            <div class="pcoded-content" id="floww-transport-div">
+              <!-- body header start -->
+              <div class="page-header card">
+                <div class="row align-items-end">
+                  <div class="col-lg-8">
+                    <!-- body header left -->
+                    <div class="page-header-title">
+                      <i class="feather icon-package bg-c-blue"></i>
+                      <div class="d-inline">
+                        <h5>Body Header</h5>
+                        <span>body header details</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <!-- body header right -->
+                    <div class="page-header-breadcrumb">
+                      <ul class="breadcrumb breadcrumb-title">
+                        <li class="floww-filter-list"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- body header ends -->
+
+              <div class="pcoded-inner-content">
+                <!-- body start here -->
+                <div class="main-body">
+                  <div class="page-body">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="card-block p-span-0">
+                          <div
+                            class="table-responsive"
+                            style="background-color: white"
+                          >
+                            <h1 style="text-align: center">Order List</h1>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- body ends here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script src="js/waves.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.js"></script>
+    <script src="js/jquery.flot.js"></script>
+    <script src="js/jquery.flot.categories.js"></script>
+    <script src="js/curvedLines.js"></script>
+    <script src="js/jquery.flot.tooltip.min.js"></script>
+    <script src="js/pcoded.min.js"></script>
+    <script src="js/vertical-layout.min.js"></script>
+    <script type="text/javascript" src="js/script.min.js"></script>
+  </body>
+</html>
